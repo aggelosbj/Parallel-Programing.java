@@ -1,0 +1,110 @@
+1 Εργασία
+Με 4 φορές το E.COLI είχαμε 4 matches σε 43 milliseconds
+
+C:\Users\kldoi\eclipse-workspace\Lab6_1\src>java BruteForceStringMatch E.COLI "tacccagattatcgccatcaacgg"
+7311 4646001 9284691 13923381
+Total matches 4
+Time to compute: 43 milliseconds
+
+με 8 φορές το E.COLI είχαμε 8 matches σε 46 milliseconds
+
+C:\Users\kldoi\eclipse-workspace\Lab6_1\src>java BruteForceStringMatch E.COLI "tacccagattatcgccatcaacgg"
+7311 4646001 9284691 13923381 18562071 23200761 27839451 32478141
+Total matches 8
+Time to compute: 46 milliseconds
+
+
+Με 16 φορές το αρχείο είχαμε 16 matches σε 76 milliseconds
+C:\Users\kldoi\eclipse-workspace\Lab6_1\src>java BruteForceStringMatch E.COLI "tacccagattatcgccatcaacgg"
+7311 4646001 9284691 13923381 18562071 23200761 27839451 32478141 37116831 41755521 46394211 51032901 55671591 60310281 64948971 69587661
+Total matches 16
+Time to compute: 76 milliseconds
+
+128 φορές 64 matches σε 283 milliseconds
+
+C:\Users\kldoi\eclipse-workspace\Lab6_1\src>java BruteForceStringMatch E.COLI "tacccagattatcgccatcaacgg"
+7311 4646001 9284691 13923381 18562071 23200761 27839451 32478141 37116831 41755521 46394211 51032901 55671591 60310281 64948971 69587661 74226351 78865041 83503731 88142421 92781111 97419801 102058491 106697181 111335871 115974561 120613251 125251941 129890631 134529321 139168011 143806701 148445391 153084081 157722771 162361461 167000151 171638841 176277531 180916221 185554911 190193601 194832291 199470981 204109671 208748361 213387051 218025741 222664431 227303121 231941811 236580501 241219191 245857881 250496571 255135261 259773951 264412641 269051331 273690021 278328711 282967401 287606091 292244781
+Total matches 64
+Time to compute: 283 milliseconds
+
+
+2 Εργασία 
+ΤΟ σειριακό έχει 
+Για 1000000000
+number of primes 50847534
+time in ms = 10425
+
+
+
+2.1 Στατική κατανομή 
+Για 1000000000
+number of primes 50847534
+time in ms = 125951
+
+Άποτι παρατηρούμε η στατική κατανομή δεν είναι καλή λύση.
+Διότι Ο χρόνος που χρειάζεται για να ολοκληρωθεί είναι μεγάλος.
+
+2.2 
+Απλή κυκλική κατανομή 
+Για 1000000000
+number of primes 50847534
+time in ms = 8579
+Παρατηρούμε ότι η κυκλική κατανομή έχει καλύτερους χρόνους απο την στατική.
+
+2.3
+Δυναμικη κατανομή 
+Για 1000000000
+number of primes 50847534
+time in ms = 7339 
+Παρατηρούμε ότι η καλύτερη λύση ειναι η δυναμική κατανομή.
+Η δυναμική κατανομή φόρτου εργασίας που υλοποιείται στον 
+τρίτο κώδικα οδηγεί σε καλύτερη απόδοση, 
+διότι επιτρέπει στα νήματα να προσαρμόζουν δυναμικά τον 
+φόρτο της εργασίας τους, εξασφαλίζοντας έτσι μια πιο ισορροπημένη
+ κατανομή των υπολογισμών και ελαχιστοποιώντας τον χρόνο εκτέλεσης.
+
+
+3. 
+Για 10000
+recursive program results with 10000 steps
+computed pi = 3,14199265442213400000      
+difference between estimated pi and Math.PI = 0,00040000083234081885
+time to compute = 0,000000 seconds
+
+Για 10000000 
+recursive program results with 10000000 steps
+computed pi = 3,14159305358973070000
+difference between estimated pi and Math.PI = 0,00000039999993761697
+time to compute = 0,076000 seconds
+
+
+Για 1000000000
+recursive program results with 1000000000 steps
+computed pi = 3,14159265758997060000
+difference between estimated pi and Math.PI = 0,00000000400017752256
+time to compute = 5,250000 seconds
+
+
+Προηγούμενες λύσης 
+multi-threaded program results with 10000 steps
+computed pi = 3,14159265442312600000
+difference between estimated pi and Math.PI = 0,00000000083333295819
+time to compute = 0,010000 seconds
+
+
+multi-threaded program results with 10000000 steps
+computed pi = 3,14159265358980330000
+difference between estimated pi and Math.PI = 0,00000000000001021405
+time to compute = 0,319000 seconds
+
+
+multi-threaded program results with 1000000000 steps
+computed pi = 3,14159265358976900000
+difference between estimated pi and Math.PI = 0,00000000000002398082
+time to compute = 36,492000 seconds
+
+
+Παρατηρούμε ότι όταν υπάρχει αναδρομική κατανομή φόρτου και υπάρχει 
+αναδρομική διαίρεση της εργασίας για να κατανείμει δυναμικά το φορτίο 
+μεταξύ των νημάτων, γίνεται επίτευξη βελτιωμένης απόδοσης 
+και εκμετάλλευσης των πόρων του συστήματος.
